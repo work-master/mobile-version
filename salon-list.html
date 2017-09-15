@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Фильтр</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="main" id="main">
+
+		<!-- Menu -->
+		<div id="menu" class="menu">
+			<div class="header-block clearfix">
+				<h2 class="menu__header">MENU</h2>
+				<a href="#" class="menu__close-button" id="close-button"></a>
+			</div>
+			<div class="first-list">
+				<a href="#" class="first-list__link">MAIN INFO</a>
+				<a href="#" class="first-list__link">SERVICES & TEAM</a>
+				<a href="#" class="first-list__link">CALENDAR</a>
+				<a href="#" class="first-list__link">SETTINGS</a>
+				<div class="clients-block clearfix">
+					<a href="#" class="first-list__link">CLIENTS</a>
+					&nbsp;
+					<span class="clients-block__counter" id="clientsCounter">4</span>
+				</div>
+				<a href="#" class="first-list__link">MY BUSINESS</a>
+			</div>
+			<div class="lang-list">
+				<a href="#" class="lang-list__link lang-list__link_active">EST</a>
+				<a href="#" class="lang-list__link">ENG</a>
+				<a href="#" class="lang-list__link">RUS</a>
+			</div>
+			<div class="third-list">
+				<a href="about.html" class="third-list__link">ABOUT US</a>
+				<a href="terms.html" class="third-list__link">TERMS & CONDITIONS</a>
+				<a href="partner.html" class="third-list__link">BECOME A PARTNER</a>
+			</div>
+		</div>
+		<div class="overlay" id="overlay"></div>
+		<!-- End of Menu -->
+
+		<!-- Header -->
+		<header class="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-3">
+						<a href="#" class="menu-button" id="menu-button"></a>
+					</div>
+					<div class="col-xs-6 text-center">
+						<a href="/" class="logo">
+							<img src="images/logo.png" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="col-xs-3 text-right">
+						<a href="login.html" id="filter-button" class="filter-button">FILTER</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End of Header -->
+
+		<div class="sort-block">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-6 sort-block__text">
+						We've found 3 venues
+					</div>
+					<div class="col-xs-6 text-right">
+						Sort by 
+						<select name="" id="sortSelect" class="sort-select">
+							<option value="">Most popular</option>
+							<option value="">Most popular</option>
+							<option value="">Most popular</option>
+							<option value="">Most popular</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="service-news">
+			<div class="service-new-block">
+				<div class="container-fluid">
+					<a href="#" class="service-img">
+						<img src="images/img-first.png" alt="">
+						<span class="service-img__text">Montes Parturient</span>
+					</a>
+					<div class="service-address">Parnu mnt.69, Tallinn, Estonia, 10135</div>
+
+					<!--Here is rating-->
+					<div class="rating pull-left"></div>
+					<!--End of rating-->
+
+					<a href="#" class="reviews-count pull-left"><span id="counterReviews">43</span> reviews</a>
+					<div class="clearfix"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+					<div class="row">
+						<div class="col-xs-7">
+							<div class="salon-prices__text">
+								Haircut
+								<span class="timer">15 min</span>
+							</div>
+							<div class="salon-prices__text">
+								Wash, Haircut and Finish
+								<span class="timer">1h 30 min</span>
+							</div>
+							<div class="salon-prices__text">
+								Haircut
+								<span class="timer">45 min</span>
+							</div>
+						</div>
+						<div class="col-xs-5 text-right">
+							<div class="like-button text-center">from 35 EUR</div>
+							<div class="like-button text-center">from 45 EUR</div>
+							<div class="like-button text-center">from 28 EUR</div>
+						</div>
+					</div>
+
+					<div class="salon-prices__header salon-prices__header_like-link">
+						<span class="all-services-text">VIEW ALL SERVICES</span>
+					</div>
+					<span class="more-arrow"></span>
+				</div>
+			</div>
+
+			<div class="service-new-block">
+				<div class="container-fluid">
+					<a href="#" class="service-img">
+						<img src="images/img-second.png" alt="">
+						<span class="service-img__text">Montes Parturient</span>
+					</a>
+					<div class="service-address">Parnu mnt.69, Tallinn, Estonia, 10135</div>
+
+					<!--Here is rating-->
+					<div class="rating pull-left"></div>
+					<!--End of rating-->
+
+					<a href="#" class="reviews-count pull-left"><span id="counterReviews">43</span> reviews</a>
+					<div class="clearfix"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+					<div class="row">
+						<div class="col-xs-7">
+							<div class="salon-prices__text">
+								Haircut
+								<span class="timer">15 min</span>
+							</div>
+							<div class="salon-prices__text">
+								Wash, Haircut and Finish
+								<span class="timer">1h 30 min</span>
+							</div>
+							<div class="salon-prices__text">
+								Haircut
+								<span class="timer">45 min</span>
+							</div>
+						</div>
+						<div class="col-xs-5 text-right">
+							<div class="like-button text-center">from 35 EUR</div>
+							<div class="like-button text-center">from 45 EUR</div>
+							<div class="like-button text-center">from 28 EUR</div>
+						</div>
+					</div>
+
+					<div class="salon-prices__header salon-prices__header_like-link">
+						<span class="all-services-text">VIEW ALL SERVICES</span>
+					</div>
+					<span class="more-arrow"></span>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer text-center">
+			<a href="about.html" class="footer__link">About us</a>
+			<a href="terms.html" class="footer__link">Terms & conditions</a>
+			<a href="become.html" class="footer__link">Become a partner</a>
+			<a href="join.html" class="footer__link">Join us</a>
+			<a href="#" target="_blank" class="footer__fb"></a>
+			<span class="footer__copy-text">© 2015 Ilu Booking l All rights reserved</span>
+		</footer>
+		<!-- End of Footer -->
+
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Вход в личный кабинет</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="main" id="main">
+
+		<!-- Menu -->
+		<div id="menu" class="menu">
+			<div class="header-block clearfix">
+				<h2 class="menu__header">MENU</h2>
+				<a href="#" class="menu__close-button" id="close-button"></a>
+			</div>
+			<div class="first-list">
+				<a href="#" class="first-list__link">MAIN INFO</a>
+				<a href="#" class="first-list__link">SERVICES & TEAM</a>
+				<a href="#" class="first-list__link">CALENDAR</a>
+				<a href="#" class="first-list__link">SETTINGS</a>
+				<div class="clients-block clearfix">
+					<a href="#" class="first-list__link">CLIENTS</a>
+					&nbsp;
+					<span class="clients-block__counter" id="clientsCounter">4</span>
+				</div>
+				<a href="#" class="first-list__link">MY BUSINESS</a>
+			</div>
+			<div class="lang-list">
+				<a href="#" class="lang-list__link lang-list__link_active">EST</a>
+				<a href="#" class="lang-list__link">ENG</a>
+				<a href="#" class="lang-list__link">RUS</a>
+			</div>
+			<div class="third-list">
+				<a href="about.html" class="third-list__link">ABOUT US</a>
+				<a href="terms.html" class="third-list__link">TERMS & CONDITIONS</a>
+				<a href="partner.html" class="third-list__link">BECOME A PARTNER</a>
+			</div>
+		</div>
+		<div class="overlay" id="overlay"></div>
+		<!-- End of Menu -->
+
+		<!-- Header -->
+		<header class="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-3">
+						<a href="#" class="menu-button" id="menu-button"></a>
+					</div>
+					<div class="col-xs-6 text-center">
+						<a href="/" class="logo">
+							<img src="images/logo.png" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="col-xs-3 text-right">
+						
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End of Header -->
+
+		<!-- Login block -->
+		<div class="login">
+			<div class="container-fluid">
+				<h1 class="login__header">LOGIN TO YOUR ACCOUNT</h1>
+			</div>
+			<div class="form-block form-block_border">
+				<div class="container-fluid">
+					<form action="">
+						<div class="form-block__label">Email</div>
+						<input type="text" class="form-block__input" placeholder="">
+						<div class="form-block__label">Password</div>
+						<input type="text" class="form-block__input" placeholder="">
+						<div class="checkbox-block checkbox-block_margin-top"><label for="check1"><input id="check1" type="checkbox"/><span>Keep me logged in</span></label></div>
+						<button class="button-send">LOG IN</button>
+					</form>
+				</div>
+			</div>
+			<a href="registration.html" class="login__create-link">Create new account</a>
+			<a href="request-password.html" class="login__forgot-link">Forgotten password?</a>
+		</div>
+		<!-- End of Login block -->
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

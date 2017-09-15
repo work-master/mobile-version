@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Фильтр</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="main" id="main">
+
+		<!-- Menu -->
+		<div id="menu" class="menu">
+			<div class="header-block clearfix">
+				<h2 class="menu__header">MENU</h2>
+				<a href="#" class="menu__close-button" id="close-button"></a>
+			</div>
+			<div class="first-list">
+				<a href="#" class="first-list__link">MAIN INFO</a>
+				<a href="#" class="first-list__link">SERVICES & TEAM</a>
+				<a href="#" class="first-list__link">CALENDAR</a>
+				<a href="#" class="first-list__link">SETTINGS</a>
+				<div class="clients-block clearfix">
+					<a href="#" class="first-list__link">CLIENTS</a>
+					&nbsp;
+					<span class="clients-block__counter" id="clientsCounter">4</span>
+				</div>
+				<a href="#" class="first-list__link">MY BUSINESS</a>
+			</div>
+			<div class="lang-list">
+				<a href="#" class="lang-list__link lang-list__link_active">EST</a>
+				<a href="#" class="lang-list__link">ENG</a>
+				<a href="#" class="lang-list__link">RUS</a>
+			</div>
+			<div class="third-list">
+				<a href="about.html" class="third-list__link">ABOUT US</a>
+				<a href="terms.html" class="third-list__link">TERMS & CONDITIONS</a>
+				<a href="partner.html" class="third-list__link">BECOME A PARTNER</a>
+			</div>
+		</div>
+		<div class="overlay" id="overlay"></div>
+		<!-- End of Menu -->
+
+		<!-- Header -->
+		<header class="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-3">
+						<a href="#" class="menu-button" id="menu-button"></a>
+					</div>
+					<div class="col-xs-6 text-center">
+						<a href="/" class="logo">
+							<img src="images/logo.png" alt="" class="img-responsive">
+						</a>
+					</div>
+					<div class="col-xs-3 text-right">
+						<a href="login.html" class="close-button"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End of Header -->
+
+		<!-- Filter block -->
+		<div class="filter">
+		  <div class="container-fluid">
+		  <div class="col-xs-12">
+			<h1 class="filter__header">FILTER SEARCH RESULTS</h1>
+			<div class="filter__label">Location</div>
+		<form action="">
+			<div class="input-wrap">
+				<i class="icon-town"></i>
+				<select name="" id="" class="select-town">
+					<option selected="selected" value="">Tallinn</option>
+					<option value="">Paris</option>
+					<option value="">Moscow</option>
+					<option value="">Kiev</option>
+					<option value="">Warshawa</option>
+				</select>
+			</div>
+			<div class="line"></div>
+
+		<div class="select-date-block">
+			<div class="input-wrap">
+				<i class="icon-date"></i>
+				<input id="date-input" class="date-input" type="text">
+			</div>
+			<div class="select-date" id="date"></div>
+		</div>
+			
+		<div class="input-wrap">
+			<i class="icon-time"></i>
+			<select name="" id="" class="select-time">
+				<option value="">00:00</option>
+				<option value="">01:00</option>
+				<option value="">02:00</option>
+				<option value="">03:00</option>
+				<option value="">04:00</option>
+				<option value="">05:00</option>
+				<option value="">06:00</option>
+				<option value="">07:00</option>
+				<option value="">08:00</option>
+				<option value="">09:00</option>
+				<option value="">10:00</option>
+				<option value="">11:00</option>
+				<option value="">12:00</option>
+				<option value="">13:00</option>
+				<option value="">14:00</option>
+				<option value="">15:00</option>
+				<option selected="selected" value="">16:00</option>
+				<option value="">17:00</option>
+				<option value="">18:00</option>
+				<option value="">19:00</option>
+				<option value="">20:00</option>
+				<option value="">21:00</option>
+				<option value="">22:00</option>
+				<option value="">23:00</option>
+			</select>
+		</div>
+			<div class="line"></div>
+
+			<div class="treatment">
+				<div class="filter__label">Treatment</div>
+				<div class="checkbox-block"><label for="check1"><input id="check1" type="checkbox"/><span>Haircut</span></label></div>
+				<div class="checkbox-block"><label for="check2"><input id="check2" type="checkbox"><span>Hair Styling</span></label></div>
+				<div class="checkbox-block"><label for="check3"><input id="check3" type="checkbox"><span>Hair Coloring</span></label></div>
+				<div class="checkbox-block"><label for="check4"><input id="check4" type="checkbox"><span>Keratin Treatment</span></label></div>
+				<div class="checkbox-block"><label for="check5"><input id="check5" type="checkbox"><span>Hair Extensions</span></label></div>
+				<div class="checkbox-block"><label for="check6"><input id="check6" type="checkbox"><span>Other ...</span></label></div>
+			</div>
+
+			<div class="price">
+				<div class="filter__label">Price</div>
+				<input type="text" id="amount" readonly>
+				<div id="slider-range"></div>
+			</div>
+
+			<div class="payment">
+				<h2 class="filter__label">Payment</h2>
+				<div class="checkbox-block"><label for="pay1"><input id="pay1" type="checkbox"/><span>Haircut</span></label></div>
+				<div class="checkbox-block"><label for="pay2"><input id="pay2" type="checkbox"><span>Hair Styling</span></label></div>
+			</div>
+
+			<button class="button-send">MODIFY SEARCH</button>
+		</form>
+		</div>
+		</div>
+		</div>
+		<!-- End of Filter block -->
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src='js/libs/moment.js'></script>
+	<script src="js/libs/fullcalendar.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
